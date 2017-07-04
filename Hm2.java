@@ -22,9 +22,18 @@ public class Hm2 {
         System.out.println("Выбирете вариант вывода: \n1 - табличный; \n2 - текстовый; \n3 - иной.");
         int line5 = var.nextInt();
 
-        if (line5==1)System.out.println("Name:" + line1 + "\nCity:"+ line2+"\nAge:"+line3+"\nHobby:"+line4);
-        if (line5==2)System.out.println("Человек по имени " + line1 + " живет в городе " + line2 + ".\nЭтому человеку " +line3+ " лет и любит он заниматься " +line4+ ".");
-        if (line5==3)System.out.println(line1 + " - name\n" + line2 + " - city\n" + line3 + " - age\n" + line4 + " - hobby");
+        switch (line5) {
+
+            case 1:
+                System.out.println("Name:" + line1 + "\nCity:" + line2 + "\nAge:" + line3 + "\nHobby:" + line4);
+                break;
+            case 2:
+                System.out.println("Человек по имени " + line1 + " живет в городе " + line2 + ".\nЭтому человеку " + line3 + " лет и любит он заниматься " + line4 + ".");
+                break;
+            case 3:
+                System.out.println(line1 + " - name\n" + line2 + " - city\n" + line3 + " - age\n" + line4 + " - hobby");
+                break;
+        }
     }
 
 }
